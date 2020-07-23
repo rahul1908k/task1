@@ -1,0 +1,349 @@
+html, body{
+    height: 100%;
+  }
+  
+  body{
+   background: none;
+   font-family: sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 1.5em;
+  }
+
+  .inner_main_menu{
+      margin: 0 auto;
+      width: 1170px;
+  }
+
+  .inner_main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+  }
+
+  .inner_main_menu ul li{
+      float: none;
+      display: inline-block;
+  }
+
+  .inner_main_menu ul li:nth-child(1){float: left;}
+  .inner_main_menu ul li:nth-child(2){float: left;}
+  .inner_main_menu ul li:nth-child(3){float: left;}
+  .inner_main_menu ul li:nth-child(4){float: left;}
+
+
+  .inner_main_menu ul li a{
+      color: white;
+      font-size: 20px;
+      margin-top: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+  }
+
+
+  .inner_main_menu ul a:hover{
+      color: orangered;
+  }
+
+
+  .slicknav_menu{
+    background: rgba(0,0,0,0) none repeat scroll 0 0;
+    font-size: 16px;
+    padding: 5px;
+    position: fixed;
+    display: none;
+    right: 0;
+    width: 100%;
+    z-index: 99999;
+  }
+
+  ul.slicknav_nav{
+    background: #262626 none repeat scroll 0 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 90%;
+  }
+
+  #main_menu{
+      width: 100%;
+      position: relative;
+  }
+
+  @media (min-width: 200px) and (max-width: 767px){
+   .logo_area a img{
+     display: none;
+   }
+    .logo_area a p{
+      margin-left: -30px;
+      font-size: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f7b018;
+      float: left;
+      padding-bottom: 200px;
+    }
+
+    
+    .slicknav_menu{display: block;}
+    .inner_main_menu{display: none;}
+  }
+  
+  .logo_area{
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      margin-top: 0;
+      left: 50%;
+      top: 0;
+      content: "";
+      margin-left: -120px;
+      text-align: center;
+  }
+
+  .logo_area a{
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .logo-text{
+      margin-top: 0
+  }
+
+
+  #hero{
+      padding-top: 100px;
+      padding-bottom: 50px;
+      height: 100%;
+      width: 100%;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-image: url('back-pics.png');
+  
+
+  }
+
+
+  #hero .btn-contact {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 20px;
+    color: #fff;
+    background: #f7b018;
+    margin-bottom: 100px;
+  }
+  
+  #hero .btn-contact:hover {
+    background: #f7b018;
+  }
+
+ .about{
+     
+     background-color:#29282D; 
+ }
+
+ .about .content {
+    padding: 0 80px;
+  }
+  
+  .about .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color: #5f5950;
+  }
+  
+  .about .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+  .about .content p {
+    font-size: 15px;
+    color: #848484;
+  }
+  
+
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+ @media (max-width: 1024px) {
+    .about .content, .about .accordion-list {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about .content {
+      padding-top: 30px;
+    }
+    .about .accordion-list {
+      padding-bottom: 30px;
+    }
+  }
+  
+  @-webkit-keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+
+  #about1{
+    background-color:#29282D;
+    overflow:hidden;
+    }
+    .lmg{
+      width: 300px;
+      height: 300px;
+      margin-bottom: -80px;
+    float:right;
+    transform:translate(150px,150px);
+     
+     
+    
+    }
+
+
+  .gallery {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-color: #29282D;
+  }
+  
+  .gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+  }
+  
+  .gallery .gallery-item img {
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .gallery .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .blog{
+    position: relative;
+    text-align: center;
+  }
+
+  .back-img-blog{
+    position: relative;
+  }
+  .box-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: orange;
+    border-style: solid;
+    background-color: #29282D;
+    transform: translate(-50%, -50%);
+  }
+  
+.menu{
+  padding-top: 100px;
+  background-color:#29282D ;
+  padding-bottom: 100px;
+}
+
+.img-fluid{
+  height: 300px;
+  width: 300px;
+}
+
+
+@media (min-width: 200px) and (max-width: 767px){
+  .menu{
+    padding-top: 200px;
+  }
+
+}
+
+
+  #footer {
+    background: #29282D;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+
+  .lastlogo{
+      width: 50px;
+      height: 40px;
+  }
+
+  
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffb03b;
+    position: relative;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #46423b;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .social-links a:hover {
+    background: #ffb03b;
+  }
+  
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+  }
+  
