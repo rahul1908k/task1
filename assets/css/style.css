@@ -10,6 +10,14 @@ html, body{
    line-height: 1.5em;
   }
 
+  .main_menu{
+    background-color: #262626;
+  }
+
+  .logo_area1{
+    display: none;
+  }
+
   .inner_main_menu{
       margin: 0 auto;
       width: 1170px;
@@ -50,7 +58,7 @@ html, body{
 
 
   .slicknav_menu{
-    background: rgba(0,0,0,0) none repeat scroll 0 0;
+    background: rgb(0,0,0,0)  none repeat scroll 0 0;
     font-size: 16px;
     padding: 5px;
     position: fixed;
@@ -64,8 +72,8 @@ html, body{
     background: #262626 none repeat scroll 0 0;
     left: 0;
     position: absolute;
-    top: 0;
-    width: 90%;
+    top: 45px;
+    width: 100%;
   }
 
   #main_menu{
@@ -74,23 +82,41 @@ html, body{
   }
 
   @media (min-width: 200px) and (max-width: 767px){
-   .logo_area a img{
-     display: none;
-   }
-    .logo_area a p{
-      margin-left: -30px;
-      font-size: 30px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #f7b018;
-      float: left;
-      padding-bottom: 200px;
+   
+      
+    .logo_area{
+      display: none;
     }
 
+    .fixed-top{
+      display: none;
+      
+    }
+
+    .logo_area1{
+      padding-top:10px ;
+      display: block;
+      background-color: #262626;
+      padding-bottom: 10px;
+      
+    }
+
+    .fixed-top{
+      background-color: #262626;
+    }
+
+   
     
     .slicknav_menu{display: block;}
     .inner_main_menu{display: none;}
   }
   
+
+  .logo_area1{
+
+   text-align: center;
+
+  }
   .logo_area{
       width: 300px;
       height: 300px;
